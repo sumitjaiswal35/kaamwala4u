@@ -1,0 +1,11 @@
+.form {
+  height: 100%;
+  background-color: #faebd7;
+}
+
+.titles {
+  display: inline-block;
+  width: 10rem;
+  text-align: right;
+  padding-bottom: 8px;
+}
