@@ -1,11 +1,10 @@
 import React from 'react';
 
-class workerSpecialization extends React.Component {
+class apartment extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.state = {specializations: this.props.specializations,
-      selected: this.props.selected};
+    this.state = {apartment: this.props.apartment, selected: this.props.selected}
   }
 
   handleChange(event) {
@@ -14,18 +13,21 @@ class workerSpecialization extends React.Component {
     } else {
       this.state.selected.splice(this.state.selected.indexOf(event.currentTarget.value), 1);
     }
-    this.props.handleStateChange({specializations: this.state.selected});
+    this.props.handleStateChange({apartments: this.state.selected});
     this.setState({selected: this.state.selected});
-    }
+    this.change = true;
+  }
 
   render() {
     const that = this;
-    this.state = this.props;
+    if (!this.change) {
+      this.state = this.props;
+    }
+    this.change = false;
     return (
       <div>
-        <label className='titles'>Specialization : </label>
-
-          {this.state.specializations.map(value =>
+        <label className='titles'>Apartment : </label>
+          {this.state.apartment.map(value =>
             <span><input onChange={this.handleChange} type="checkbox" value={value} checked={that.state.selected.indexOf(value) !== -1}/>{value}</span>
           )}
       </div>
@@ -33,4 +35,4 @@ class workerSpecialization extends React.Component {
   }
 }
 
-export default workerSpecialization;
+export default apartment;

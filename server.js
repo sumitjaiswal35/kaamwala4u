@@ -18,3 +18,8 @@ server.get('/', function(req, res) {
 server.get('/workers', function(req, res) {
   res.render('workers');
 });
+
+server.post('/workers', function(req, res) {
+  console.log(req.body);console.log(req.stack);
+  res.render('workers');
+});
