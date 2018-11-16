@@ -1,0 +1,125 @@
+body {
+  font-family: sans-serif;
+}
+
+.help-social-header {
+  float: right;
+  width: 100%;
+  background: white;
+}
+
+.empty-div {
+  float: left;
+}
+
+.social-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 1rem;
+  padding-top: 0.65rem;
+  float: right;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.contact-number {
+  display: inline-block;
+  width: 211px;
+  z-index: 50;
+  height: 47px;
+  border: 0 solid rgba(65, 65, 65, 1);
+  background-color: rgba(222, 255, 79, 1);
+  border-radius: 0;
+  float: right;
+}
+
+.contact-number div {
+  text-align: center;
+  font: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  color: #0F93FE;
+  padding-top: 0.65rem;
+}
+
+
+.navbar {
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+  width: 15%;
+}
+
+.navbar a:hover {
+  color: rgba(222, 255, 79, 1);
+}
+
+.menu-options {
+  background-color: rgb(15,147,254);
+  line-height: 4.25rem;
+}
+
+.logo, .menu , .logo img, .logo div, .book-nown, .navbar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 40%;
+}
+.menu {
+  width: 57%;
+}
+.logo img {
+  padding-left: 1rem;
+}
+
+.logo .logo-label {
+  color: rgba(255, 255, 255, 1);
+  padding-left: 0.25rem;
+  font: normal normal normal 20px/1.4em lulo-clean-w01-one-bold,sans-serif;
+}
+
+.logo .logo-label:hover {
+  color: rgba(222, 255, 79, 1);
+}
+
+.menu-options .menu {
+  padding-left: 2rem;
+}
+
+.menu-options .book-now {
+  color: rgba(222, 255, 79, 1);
+  padding-left: 1rem;
+  font-size: 1.15rem;
+}
+
+.menu-options .book-now:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.first-section {
+  background-color: rgb(15,147,254);
+}
+
+.sine-image {
+  width: 15rem;
+  height: 15rem;
+  margin-top: calc(644px - 100%);
+  margin-left: calc(100% - 754px);
+}
+
+.back-image {
+  width: 100%;
+}

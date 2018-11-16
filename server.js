@@ -12,7 +12,11 @@ server.set('view engine', 'hbs');
 server.set('views', path.join(__dirname, 'views'));
 
 server.get('/', function(req, res) {
-  res.send('Home Page');
+  res.render('Home');
+});
+
+server.get('/home', function(req, res) {
+  res.render('Home');
 });
 
 server.get('/workers', function(req, res) {
